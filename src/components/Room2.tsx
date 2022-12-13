@@ -19,7 +19,7 @@ function Room2(props: any) {
         <Grid item xs={3} md={2} sm container>
           <Typography variant="subtitle1" component="div">
             <div className="menuicon">
-              <a href={""}>
+              <a href={"/Home"}>
                 <Img
                   id="Icon"
                   alt="menubutton"
@@ -60,7 +60,7 @@ function Room2(props: any) {
         <Grid item xs={3} md={2} sm container>
           <Typography variant="body2" component="div">
             <div className="menuicon">
-              <a href={""}>
+              <a href={"/Home"}>
                 <Img
                   id="menuIcon"
                   alt="menubutton"
@@ -146,7 +146,7 @@ function Room2(props: any) {
             md={11}
             sx={{
               mb: 3,
-              mr:5
+              mr: 5,
             }}
           >
             <h1>Guests in this Room</h1>
@@ -185,7 +185,7 @@ function Room2(props: any) {
             md={11}
             sx={{
               mb: 3,
-              mr:5
+              mr: 5,
             }}
           >
             <h1>Room Extras</h1>

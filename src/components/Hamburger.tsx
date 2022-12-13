@@ -1,8 +1,9 @@
-import React from "react";
 import { slide as Menu } from "react-burger-menu";
 
-export default (props) => {
-  const { data } = props;
+// eslint-disable-next-line
+export default (props:any) => {
+  // eslint-disable-next-line
+  const {  } = props;
   return (
     <Menu>
       <a className="menu-item" href="/Home">
