@@ -21,7 +21,9 @@ const dataResponse = await fetch(
   {       
     method: "GET",
     
+    
     headers: {
+      mode:'no-cors',
     accept:'application/json',
       "x-functions-key": "trsmthTaK7p/CS6CSQamg0zB9xxmd9w5COrtM9vS1azadc4sksMYPA==",
     },

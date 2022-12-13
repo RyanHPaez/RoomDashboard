@@ -31,17 +31,17 @@ ul{
 }
 
 .bm-burger-button {
-  position:absolute;  
-  width: 2.5vw;
-  height: 3%;
+  position:relative;  
+  width: 1.75rem;
+  height:1.5rem;
   left: 2vw;
-  top:2em;
+  top:3em;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: #ffffff;
-  font-size: .5rem;
+  font-size: .2rem;
 }
 
 /* Color/shape of burger icon bars on hover*/
