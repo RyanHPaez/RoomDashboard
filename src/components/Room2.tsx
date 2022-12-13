@@ -146,6 +146,7 @@ function Room2(props: any) {
             md={11}
             sx={{
               mb: 3,
+              mr:5
             }}
           >
             <h1>Guests in this Room</h1>
@@ -184,6 +185,7 @@ function Room2(props: any) {
             md={11}
             sx={{
               mb: 3,
+              mr:5
             }}
           >
             <h1>Room Extras</h1>
