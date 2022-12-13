@@ -5,11 +5,15 @@ html{
 .navigation{
  display: flex;
  flex-direction: column;
- box-shadow: 0px 0px 0px 5px #00BFC8;
+ box-shadow:  5px 5px 20px #bbbbbb;
  background-color: #00BFC8;
  width: 100vw;
- height: auto;
+ height: 100px;
  color: #ffffff;
+ font-size: 32px;
+ font-weight:lighter;
+ justify-content: center; 
+ 
 }
 
 .nav-link{
@@ -31,11 +35,11 @@ ul{
 }
 
 .bm-burger-button {
-  position:relative;  
-  width: 1.75rem;
-  height:1.5rem;
+  position:absolute;  
+  width: 2rem;
+  height:20px;
   left: 2vw;
-  top:3em;
+  top:2em;
 }
 
 /* Color/shape of burger icon bars */
@@ -145,6 +149,7 @@ li{
   margin-right: auto;
   margin-left: 25px;
   color: #00BFC8;
+  position: static; 
 }
 
 .divider{
@@ -157,6 +162,7 @@ li{
   margin-left: 25px;
   margin-bottom: 50px;
   margin-top: 50px;
+  position: static; 
 }
 
 .Extras{
@@ -164,6 +170,7 @@ li{
   margin-left: 25px;
   margin-bottom: 50px;
   margin-top: 50px;
+  position: static; 
 }
 
 .Cancel{
@@ -180,16 +187,35 @@ li{
 
 a:link {
   text-decoration: none;
-  margin-top: 25px;
+  margin: auto;
 }
 
 a:link:hover {
-  text-decoration: underline;  
+  text-decoration: underline;
+  text-decoration-color: #00BFC8;    
+}
+
+.NavItems{
+  margin-top: 20px;
+  color:rgb(174, 174, 174);
+}
+.NavItems:hover{
+  color:#00BFC8;
+  text-decoration-color: #00BFC8; 
 }
 
 .fa-solid {
   margin-right: 5px;
-  width: auto;  
+  width: auto; 
+  position: static; 
+}
+
+#AN{
+  position:relative;
+  background-color: rgb(138, 138, 244);
+  font-size: 25px;
+  height: 60px;
+  margin-top: 20px;
 }
 
 

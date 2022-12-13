@@ -3,16 +3,31 @@ import { NavLink } from "react-router-dom";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 
+
 function Navigation() {
   return (
     <div className="top">
       <div className="navigation">
-        <h1>Room DashBoard</h1>
+      <Grid container spacing={2}>
+      <Grid item xs={2} md={4.5}></Grid>
+      <Grid item xs={7} md={5}>
+        <p>Room DashBoard</p>
+        </Grid>
+        <Grid item xs={3} md={1.75} container justifyContent="flex-end">
+        <Button id="AN"
+         
+              variant="contained"              
+              style={{ borderRadius: 60 }}             
+            >             
+              AN
+            </Button>
+        </Grid>
+        </Grid>
       </div>
       <div className="navButons">
         <Grid container spacing={2}>
           <Grid item xs={3} md={3}>
-            <Button color="success" style={{ borderRadius: 50 }}>
+            <Button style={{ backgroundColor: 'transparent' }}>
               <NavLink className="nav-link" to="/Home">
                 <i className="NavItems" style={{ fontSize: "15px" }}>
                   Home
@@ -21,7 +36,7 @@ function Navigation() {
             </Button>
           </Grid>
           <Grid item xs={3} md={3}>
-            <Button color="success" style={{ borderRadius: 50 }}>
+            <Button  style={{ backgroundColor: 'transparent' }}>
               <NavLink className="nav-link" to="/Room2">
                 <i className="NavItems" style={{ fontSize: "15px" }}>
                   API DATA
@@ -30,7 +45,7 @@ function Navigation() {
             </Button>
           </Grid>
           <Grid item xs={3} md={1}>
-            <Button color="success" style={{ borderRadius: 50 }}>
+            <Button  style={{ backgroundColor: 'transparent' }}>
               <NavLink className="nav-link" to="/Room3">
                 <i className="NavItems" style={{ fontSize: "15px" }}>
                   Room 3
