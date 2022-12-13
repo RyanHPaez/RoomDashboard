@@ -191,16 +191,19 @@ a:link {
 }
 
 a:link:hover {
-  text-decoration: underline;
-  text-decoration-color: #00BFC8;    
+  text-decoration: underline;  
 }
 
 .NavItems{
   margin-top: 20px;
   color:rgb(174, 174, 174);
+  font-size: 18px;
+  font-weight:lighter;
 }
+
 .NavItems:hover{
   color:#00BFC8;
+  text-decoration: underline;
   text-decoration-color: #00BFC8; 
 }
 
