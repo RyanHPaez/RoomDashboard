@@ -84,12 +84,20 @@ function Room2(props: any) {
 
       <div className="buttons">
         <Grid container spacing={2}>
-          <Grid item xs={4} md={1}>
+          <Grid
+            item
+            xs={4}
+            md={1}
+            sx={{
+              mb: 3,
+            }}
+          >
             <Button
               variant="outlined"
               color="success"
               style={{ borderRadius: 50 }}
-            ><i className="fa-solid fa-check"></i>
+            >
+              <i className="fa-solid fa-check"></i>
               {data.roomInfo[0].room[0].roomStatus}
             </Button>
           </Grid>
@@ -99,8 +107,28 @@ function Room2(props: any) {
               style={{ borderRadius: 50 }}
               variant="outlined"
               color="secondary"
-            ><i className="fa-solid fa-dollar-sign"></i>
+            >
+              <i className="fa-solid fa-dollar-sign"></i>
               Balance Due - ${data.roomInfo[0].room[0].remainingBalance}
+            </Button>
+          </Grid>
+          <Grid item xs={4} md={8}></Grid>
+        </Grid>
+      </div>
+
+      <div className="buttons">
+        <Grid container spacing={2}>
+          <Grid item xs={4} md={1}>
+            <Button style={{ borderRadius: 50 }}>
+              <i className="fa-solid fa-pen"></i>
+              Modify
+            </Button>
+          </Grid>
+
+          <Grid item xs={4} md={2}>
+            <Button style={{ borderRadius: 50 }}>
+              <i className="fa-solid fa-dollar-sign"></i>
+              Make Payment
             </Button>
           </Grid>
           <Grid item xs={4} md={8}></Grid>
@@ -111,33 +139,34 @@ function Room2(props: any) {
         <Divider variant="middle" />
       </div>
       <div className="Guests" style={{ fontSize: "12px" }}>
-        <h1>Guests in this Room</h1>
+        <Grid container spacing={2}>
+          <Grid
+            item
+            xs={11}
+            md={11}
+            sx={{
+              mb: 3,
+            }}
+          >
+            <h1>Guests in this Room</h1>
+          </Grid>
+        </Grid>
         <Grid container spacing={2}>
           <Grid item xs={4} md={1}>
-            <Button
-              variant="outlined"
-              color="success"
-              style={{ borderRadius: 50 }}
-            ><i className="fa-solid fa-user">-</i>
+            <Button variant="outlined" style={{ borderRadius: 50 }}>
+              <i className="fa-solid fa-user"></i>
               Adult 1
             </Button>
           </Grid>
           <Grid item xs={4} md={1}>
-            <Button
-              variant="outlined"
-              color="success"
-              style={{ borderRadius: 50 }}
-            ><i className="fa-solid fa-user">-</i>
+            <Button variant="outlined" style={{ borderRadius: 50 }}>
+              <i className="fa-solid fa-user"></i>
               Adult 2
             </Button>
           </Grid>
           <Grid item xs={4} md={1}>
-            <Button
-              variant="outlined"
-              color="success"
-              style={{ borderRadius: 50 }}
-            >             
-             <i className="fa-solid fa-child">-</i>Child 1
+            <Button variant="outlined" style={{ borderRadius: 50 }}>
+              <i className="fa-solid fa-child"></i>Child 1
             </Button>
           </Grid>
           <Grid item xs={1} md={8}></Grid>
@@ -148,7 +177,18 @@ function Room2(props: any) {
         <Divider variant="middle" />
       </div>
       <div className="Extras" style={{ fontSize: "12px" }}>
-        <h1>Room Extras</h1>
+        <Grid container spacing={2}>
+          <Grid
+            item
+            xs={11}
+            md={11}
+            sx={{
+              mb: 3,
+            }}
+          >
+            <h1>Room Extras</h1>
+          </Grid>
+        </Grid>
         <Grid container spacing={2}>
           <Grid item xs={3} md={3}>
             <Button

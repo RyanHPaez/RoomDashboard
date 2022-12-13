@@ -1,11 +1,11 @@
-import React from 'react';
-import { slide as Menu } from 'react-burger-menu';
+import React from "react";
+import { slide as Menu } from "react-burger-menu";
 
 export default (props) => {
-  const {data} = props
+  const { data } = props;
   return (
     <Menu>
-        <a className="menu-item" href="/Home">
+      <a className="menu-item" href="/Home">
         About us
       </a>
       <a className="menu-item" href="/Home">
